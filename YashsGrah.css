@@ -377,6 +377,29 @@ nav ul li:hover:before {
     text-align: center;
 
 }
+footer ul{
+    width: 10em;
+    list-style: none;
+}
+footer h4{
+    font-size: 1em;
+    font-weight: 500;
+}
+footer ul li{
+    font-size: 1.3em;
+}
+footer ul li:nth-child(1):hover{
+    color: rgb(74, 110, 163);
+}
+footer ul li:nth-child(2):hover{
+     background: linear-gradient(45deg, #fdf497, #fd5949, #d6249f, #285aeb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* For Firefox */
+}
+footer ul li:nth-child(3):hover{
+    color: rgb(13, 174, 248);
+}
 
 @media (max-width: 1150px) {
 
@@ -412,9 +435,9 @@ nav ul li:hover:before {
 
 @media (max-width: 1024px) {
 
-    /* .titles, .portfolio{
-        width: 95%;
-    } */
+    .titles, .portfolio{
+        width: 90%;
+    }
     .info {
         width: 87%;
     }
@@ -503,27 +526,4 @@ footer{
     color: rgb(206, 200, 241);
     gap: 0.7em;
     padding: 0.5em 0;
-}
-footer ul{
-    width: 10em;
-    list-style: none;
-}
-footer h4{
-    font-size: 1em;
-    font-weight: 500;
-}
-footer ul li{
-    font-size: 1.3em;
-}
-footer ul li:nth-child(1):hover{
-    color: rgb(74, 110, 163);
-}
-footer ul li:nth-child(2):hover{
-     background: linear-gradient(45deg, #fdf497, #fd5949, #d6249f, #285aeb);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text; /* For Firefox */
-}
-footer ul li:nth-child(3):hover{
-    color: rgb(13, 174, 248);
 }
