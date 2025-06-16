@@ -76,13 +76,17 @@ body {
 nav {
     width: 100%;
     margin: 0 0 2em 0;
+    position: fixed;
+    z-index: 100;
     /* padding: 0.3em 0.7em; */
 }
 
 nav ul {
+    background:#04001ae3;
     gap: 2.5em;
-    box-shadow: 0px 0px 20px rgb(2, 15, 44);
+    box-shadow: 0px 0px 20px rgb(0, 11, 34);
     border: 2px solid rgb(2, 12, 46);
+    backdrop-filter: blur(10px);
     height: 2em;
     padding: 1.2em 3em;
     margin: 1em 0;
@@ -92,7 +96,6 @@ nav ul {
 
 nav ul li {
     cursor: pointer;
-    background: rgba(255, 255, 255, 0);
     font-size: 1rem;
     position: relative;
     color: rgb(158, 181, 229);
@@ -125,7 +128,9 @@ nav ul li:hover:before {
     opacity: 1;
     transform: translate(0, 0);
 }
-
+.main{
+    margin: 6em 0 0 0;
+}
 .titles {
     box-shadow: 0 0 20px rgb(2, 15, 44);
     width: 70em;
@@ -326,7 +331,7 @@ nav ul li:hover:before {
 .port-holder {
     width: 65em;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 3em;
     padding: 0 1.5em;
 }
@@ -375,8 +380,11 @@ nav ul li:hover:before {
 .port-item {
     color: rgba(133, 156, 180, 0.199);
     text-align: center;
-
 }
+/* }
+.transformation-tn{
+    width: 100%;
+} */
 footer ul{
     width: 10em;
     list-style: none;
@@ -433,8 +441,8 @@ footer ul li:nth-child(3):hover{
     }
 }
 
-@media (max-width: 1024px) {
 
+@media (max-width: 1024px){
     .titles, .portfolio{
         width: 90%;
     }
@@ -563,4 +571,4 @@ nav, .portfolio, .Stats{
 nav{ animation-delay: 0.2s;}
 .titles{animation: titles 0.35s 0.1s ease-in-out;}
 .portfolio{ animation-delay: 0.3s;}
-.Stats{ animation-delay: 0.4s;}
+.Stats{ animation-delay: 0.3s;}
